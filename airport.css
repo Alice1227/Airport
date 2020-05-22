@@ -1,0 +1,56 @@
+.airport-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.d3-tip {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  font-size: 10px;
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.bar-tip {
+  background: #aaa;
+  border: solid 1px #aaa;
+}
+
+.bar-tip:after {
+  color: #aaa;
+}
+
+.line-tip {
+  background: #585455;
+  border: solid 1px #585455;
+}
+
+.line-tip:after {
+  color: #585455;
+}

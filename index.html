@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="airport.css">
+</head>
+
+<body>
+  <div>
+    <select id="status" onchange="selectStatus()">
+      <option value="arrival">入境</option>
+      <option value="departure">出境</option>
+    </select>
+    <select id="country" onchange="selectCountry()">
+      <option value="">--國家--</option>
+      <option value="Japan">日本</option>
+      <option value="China">中國大陸</option>
+      <option value="Hongkong">香港</option>
+      <option value="Korea">南韓</option>
+      <option value="Vietnam">越南</option>
+      <option value="Usa">美國</option>
+      <option value="Thailand">泰國</option>
+      <option value="Philippines">菲律賓</option>
+      <option value="Singapore">新加坡</option>
+      <option value="Malaysia">馬來西亞</option>
+    </select>
+  </div>
+  <br>
+  <div class="airport-graph">
+    <div id="chart"></div>
+    <br>
+    <div id="note"></div>
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="airportData.js"></script>
+<script type="text/javascript" src="airport.js"></script>
+
+</html>
